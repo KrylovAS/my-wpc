@@ -1,3 +1,15 @@
+ @import 'normalize';
+
 body {
-  
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto regular", Arila, sans-serif;
+  background-color: #ffaa00; 
 }
+
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+@import 'header';

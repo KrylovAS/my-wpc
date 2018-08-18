@@ -23,7 +23,8 @@ module.exports = (env = {}, argv) => {
       
       src: [
         './scss/main.scss',
-        './js/main.js'
+        './js/main.js',
+        
       ]
     },
 
@@ -84,6 +85,7 @@ module.exports = (env = {}, argv) => {
             }
           }
         },
+        
         {
           test: /\.(gif|png|jpe?g|svg)$/i,
           exclude: /fonts/,
@@ -92,7 +94,8 @@ module.exports = (env = {}, argv) => {
               loader: 'file-loader',
               options: {
                 name: '[path][name].[ext]',
-                publicPath: '' // use relative urls
+                //outputPath: './src/i'
+                //publicPath: '~' // use relative urls
               }
             },
             {
@@ -134,7 +137,7 @@ module.exports = (env = {}, argv) => {
           use: {
             loader: 'html-loader',
             options: {
-              minimize: true,
+              //minimize: true,
               removeComments: true,
               collapseWhitespace: true,
               removeScriptTypeAttributes: true,
@@ -159,7 +162,7 @@ module.exports = (env = {}, argv) => {
     plugins: (() => {
       let common = [
         new plugins.extractCSS({
-          filename: 'css/main.css'
+          filename: 'main.css'
         }),
         new plugins.html({
           template: 'index.html',
