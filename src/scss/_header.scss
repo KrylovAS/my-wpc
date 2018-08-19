@@ -1,11 +1,48 @@
 
+.header {
+  display: flex;
+}
+
+
 .header__bg {
-  background: url('../img/zxcv2.jpeg') no-repeat;
-  border: 1px solid red;
+  background: url('../img/headerBG@1X.jpeg') no-repeat;
+  background-color: #373F42;
   padding-top: 715px; 
+  width: 1028px;
+  
 } 
 
-.header__bg1 {
-  background: url('../img/zxcv1.png');
-  padding-top: 715px; 
+.header__content {
+  width: 458px;
+  padding-top: 150px;
+  padding-left: 54px;
+  background-color: #f3f3f3;
 }
+
+.header__title {
+  margin: 0;  
+  font-size: 40px;
+  font-weight: 400;
+  color: #262F32;
+  line-height: 57.75px;
+  letter-spacing: 1.37px;
+}
+
+.header__title_top,
+.header__title_middle {
+  display: block; 
+}
+
+.header__title_top { 
+  font-family: "Roboto Light", Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+.header__title_middle {
+  font-family: "Roboto Bold", Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+
+
+
